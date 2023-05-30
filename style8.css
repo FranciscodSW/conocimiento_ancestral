@@ -1,0 +1,64 @@
+/* Estilos del formulario */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+label,
+input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Animaciones en hover y focus */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #666;
+    color: #fff;
+    outline: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro</title>
+    <style>
+        body {
+            background-color: black;
+            color: #fdf9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #666;
+            color: #f6f6f8;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus {
+            background-color: #555;
+        }
+
+        button[type="submit"],
+        button[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: #ebebef;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        img {
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <script>
+        function mostrarVentanaEmergente() {
+            alert('Datos guardados');
+            window.location.href = 'https://mpago.la/1m82euw'; // Redirecciona a Mercado Libre
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="mostrarVentanaEmergente(); return false;">
+        <h2>Registro</h2>
+        <input type="text" placeholder="Nombre" pattern="[A-Za-z]+" required>
+        <input type="text" placeholder="Apellido Paterno" pattern="[A-Za-z]+" required>
+        <input type="text" placeholder="Apellido Materno" pattern="[A-Za-z]+" required>
+        <input type="tel" placeholder="Teléfono" pattern="[0-9]{10}" required>
+        <input type="email" placeholder="Correo Electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
+        <input type="email" placeholder="Confirmar Correo Electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
+        <select name="terapia" required>
+            <option value="">Seleccione una terapia</option>
+            <option value="yoga">Taller de Yoga</option>
+            <option value="reiki">Terapia de Reiki</option>
+            <option value="ventosas">Terapia de Ventosas</option>
+            <option value="masaje">Terapia de Masaje</option>
+        </select>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="history.back()">Regresar</button>
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+
